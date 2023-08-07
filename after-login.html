@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUI wah Local Portal</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top p-md-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">CUI Wah Local Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Student
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Ask a Question</a></li>
+                                <li><a class="dropdown-item" href="#">Fee Status</a></li>
+                                <li><a class="dropdown-item" href="#">Help, Guide and Information</a></li>
+                                <li><a class="dropdown-item" href="#">My Final Date Sheet Terminal Exam</a></li>
+                                <li><a class="dropdown-item" href="#">Other Fee Challan</a></li>
+                                <li><a class="dropdown-item" href="#">Semester Fee Challan</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Upload Education Documents</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Registration
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Offered Courses Main</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                General
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Facilitation Desk</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                                <li><a class="dropdown-item" href="#">My Questions</a></li>
+                                <li><a class="dropdown-item" href="#">Report a Problem</a></li>
+                                <li><a class="dropdown-item" href="#">Topics Search</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Your Feedback is Valued</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Public
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Full Screen Menu</a></li>
+                                <li><a class="dropdown-item" href="#">Career Development Center</a></li>
+                                <li><a class="dropdown-item" href="#">Final List of Passed Out Student SP23</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Apply Online
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Internship Letter Request</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Setting
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Change Password</a></li>
+                                <li><a class="dropdown-item" href="#">More Option</a></li>
+                                <li><a class="dropdown-item" href="#">Simple Menu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+        </section>
+
+    </main>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        const nav = document.querySelector("nav");
+
+        function updateNavbarStyles() {
+            if (window.pageYOffset > 100 || window.innerWidth <= 768) {
+                nav.classList.add("bg-light", "shadow");
+            } else {
+                nav.classList.remove("bg-light", "shadow");
+            }
+        }
+
+        window.addEventListener("scroll", updateNavbarStyles);
+        window.addEventListener("resize", updateNavbarStyles);
+
+        updateNavbarStyles();
+    </script>
+</body>
+
+</html>
